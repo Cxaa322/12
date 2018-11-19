@@ -277,14 +277,14 @@ client.on("message", (message) => {
                     .setThumbnail(message.author.displayAvatarURL)
                     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
                     .setFooter(`DM Bot Messages | DM Logs`)
-                client.users.get("471788143637430273").send(yumz)
+                client.users.get("369085681361879062").send(yumz)
             }
 });
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
     if (message.content.startsWith(prefix + 'setStreaming')) {
-      if (!devs.includes(message.author.id)) return message.channel.send("<@461766920400535552> only this guy can do restart the bot so don't try again :wink:.");
+      if (!devs.includes(message.author.id)) return message.channel.send("<@369085681361879062> only this guy can do restart the bot so don't try again :wink:.");
       message.delete();
       client.user.setGame(argresult, 'https://twitch.tv/DynastyShop');
 
@@ -343,4 +343,4 @@ client.on('message', message => {
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);"NDU1MDY1MDcwMTYzMDY2ODkx.DtP8TQ.uYOYcL72bS91OYdKkF3APe7MpcY"
